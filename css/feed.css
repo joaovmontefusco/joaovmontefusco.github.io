@@ -1,0 +1,71 @@
+body{
+    background-color: #fae8de;
+}
+
+.titulo-categorias{
+    text-align: center;
+    font-size: 30px;
+    font-style: sans-serif;
+    color: #462919;
+    margin-top: 20px;
+}
+
+.card{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    width: 500px;
+    height: 200px;
+    padding: 12px;
+}
+
+.card-imagem{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    width: 500px;
+    height: 200px;
+    padding: 12px;
+}
+.card-com-imagem{
+    height: 450px !important;
+}
+.card img{
+    width: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.aba-menu{
+    position: absolute;
+    top: 35px;
+    left: 125px;
+}
+
+.aba{
+    text-decoration: none;
+    color: #462919;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 20px;
+}
+
+.aba-logout{
+    position: absolute;
+    top: 35px;
+    right: 170px;
+}
+
+.botao-post{
+    width: 100%;
+}
+.btn{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    margin-bottom: 50px;
+}

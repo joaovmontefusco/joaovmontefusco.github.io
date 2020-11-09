@@ -1,0 +1,26 @@
+body{
+    background-color: #fae8de;
+}
+
+.texto-inicial{
+    text-align: center;
+    font-size: 30px;
+    font-style: sans-serif;
+    color: #462919;
+}
+
+.cadastro{
+    text-align: center;
+}
+
+.login-text{
+    text-align: center;
+    font-size: 20px;
+    font-style: sans-serif;
+    color: #462919;
+    margin-bottom: 0;
+}
+
+.login-campo, .pass-campos{
+    margin-bottom: 0;
+}
