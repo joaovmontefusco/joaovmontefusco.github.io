@@ -9,6 +9,32 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+h1 {
+  font-size: xx-large;
+}
+
 .link {
   color: #26a69a;
+}
+
+.nav-logo {
+  margin-left: 20px;
+}
+
+.card-img-size {
+  height: 230px;
+  width: 400px;
+}
+
+.category-card {
+  height: 400px;
+}
+
+.card-content {
+  height: 28%;
+}
+
+.post-image {
+  height: 300px;
+  width: 100%;
 }

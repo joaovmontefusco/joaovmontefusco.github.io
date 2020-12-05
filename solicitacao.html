@@ -1,29 +1,59 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>PAYU</title>
+		<title>PAYU - Home</title>
 		<link rel="icon" href="img/payu.png">
 		<meta charset="utf-8">
-		<link rel="stylesheet" type="text/css" href="css/materialize.css">
-        <link rel="stylesheet" type="text/css" href="css/solicitacao.css">
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<!-- Compiled and minified CSS -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+		<!-- Compiled and minified JavaScript -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;1,200&display=swap" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	</head>
 
 	<body>
-        <main>
-            <div class="header">
-                <h1 class="titulo-categorias">Equipe Payu</h1>
+        <nav>
+            <div class="nav-wrapper">
+                <a href="categorias.html" class="brand-logo nav-logo">PAYU</a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="categorias.html">Categorias</a></li>
+                    <li><a href="mensagens.html">Mensagens</a></li>
+                    <li><a href="perfil.html">Perfil</a></li>
+                    <li><a href="index.html">Sair</a></li>
+                </ul>
             </div>
-            <div class="form-mensagem">
-                <p>Mande uma mensagem para a nossa equipe</p>
-                <input type="text">
+        </nav> 
+        <div class="container">
+            <div class="row">
+                <div class="col s12 center">
+                    <h1>Solicitação de nova categoria</h1>
+                </div>
             </div>
-            <div class="botao-enviar">
-                <a>
-                    <i class="material-icons">send</i>
-                </a>
-            </div>
-        </main>
+            <div class="row">
+                <form class="col s12">
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="nome-categoria" type="text" data-length="10">
+                            <label for="nome-categoria">Insira o nome da categoria que deseja solicitar</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <textarea id="descricao" class="materialize-textarea" data-length="1000"></textarea>
+                            <label for="descricao">Descreve um pouco mais sobre a categoria e como ela pode ser útil para a comunidade</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class='col s12 center'>
+                            <a href="categorias.html" class="center waves-effect waves-light btn">Solicitar</a>
+                        </div>
+                    </div>
+                </form>
+            </div>        
+        </div>
     </body>
 </html>

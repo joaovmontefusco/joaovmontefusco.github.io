@@ -1,44 +1,141 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>PAYU</title>
+		<title>PAYU - Home</title>
 		<link rel="icon" href="img/payu.png">
 		<meta charset="utf-8">
-		<link rel="stylesheet" type="text/css" href="css/materialize.css">
-		<link rel="stylesheet" type="text/css" href="css/categorias.css">
+		<!-- Compiled and minified CSS -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+		<!-- Compiled and minified JavaScript -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;1,200&display=swap" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	</head>
 
 	<body>
-        <main>
-            <div class="aba-menu">
-                <a href="perfil.html" class="aba">Perfil</a>
-                <a href="categorias.html" class="aba">Categorias</a>
-                <a href="mensagens.html" class="aba">Mensagens</a>
+        <nav>
+            <div class="nav-wrapper">
+                <a href="categorias.html" class="brand-logo nav-logo">PAYU</a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="categorias.html">Categorias</a></li>
+                    <li><a href="mensagens.html">Mensagens</a></li>
+                    <li><a href="perfil.html">Perfil</a></li>
+                    <li><a href="index.html">Sair</a></li>
+                </ul>
             </div>
-
-            <div class="aba-logout">
-                <a href="index.html" class="aba">Sair</a>
-            </div>            
-            <div class="center">
-				<img alt="Logo da Payu" class="logo" src="img/payu.png">
-            </div>
-            <h1 class="titulo-categorias">Categorias</h1>
-
+        </nav> 
+        <div class="container">
             <div class="row">
-                <a href="feed.html"><div class="card">Puerpério</div></a>
-                <a href="feed.html"><div class="card">Amamentação</div></a>
-                <a href="feed.html"><div class="card">Profissinais de saúde</div></a>
-            </div>
-            <div class="row">
-                <a href="feed.html"><div class="card">Parto</div></a>
-                <a href="feed.html"><div class="card">Enxoval</div></a>
-                <a href="feed.html"><div class="card">Lazer</div></a>
+                <div class="col s12 center">
+                    <h1>Sobre o que você quer falar?</h1>
+                </div>
+                <div class="col s12 right-align">
+                    <a href="solicitacao.html" class="center waves-effect waves-light btn">Solicitar nova categoria</a>
+                </div>
             </div>
             <div class="row">
-                <a href="feed.html"><div class="card">Alimentação</div></a>
-                <a href="solicitacao.html"><div class="card">Nova categoria</div></a>
+                <div class="col s4">
+                    <div class="card category-card">
+                        <div class="card-image">
+                            <img src="img/purperio.jpg" class="card-img-size">
+                            <span class="card-title">Puerpério</span>
+                        </div>
+                        <div class="card-content">
+                            <p>Inserir a descrição da categorias aqui</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="feed.html">Ver mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s4">
+                    <div class="card category-card">
+                        <div class="card-image">
+                            <img src="img/purperio.jpg" class="card-img-size">
+                            <span class="card-title">Amamentação</span>
+                        </div>
+                        <div class="card-content">
+                            <p>Inserir a descrição da categorias aqui</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="feed.html">Ver mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s4">
+                    <div class="card category-card">
+                        <div class="card-image">
+                            <img src="img/purperio.jpg" class="card-img-size">
+                            <span class="card-title">Profissionais de Saúde</span>
+                        </div>
+                        <div class="card-content">
+                            <p>Inserir a descrição da categorias aqui</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="feed.html">Ver mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s4">
+                    <div class="card category-card">
+                        <div class="card-image">
+                            <img src="img/purperio.jpg" class="card-img-size">
+                            <span class="card-title">Parto</span>
+                        </div>
+                        <div class="card-content">
+                            <p>Inserir a descrição da categorias aqui</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="feed.html">Ver mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s4">
+                    <div class="card category-card">
+                        <div class="card-image">
+                            <img src="img/purperio.jpg" class="card-img-size">
+                            <span class="card-title">Enxoval</span>
+                        </div>
+                        <div class="card-content">
+                            <p>Inserir a descrição da categorias aqui</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="feed.html">Ver mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s4">
+                    <div class="card category-card">
+                        <div class="card-image">
+                            <img src="img/purperio.jpg" class="card-img-size">
+                            <span class="card-title">Lazer</span>
+                        </div>
+                        <div class="card-content">
+                            <p>Inserir a descrição da categorias aqui</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="feed.html">Ver mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s4">
+                    <div class="card category-card">
+                        <div class="card-image">
+                            <img src="img/purperio.jpg" class="card-img-size">
+                            <span class="card-title">Alimentação</span>
+                        </div>
+                        <div class="card-content">
+                            <p>Inserir a descrição da categorias aqui</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="feed.html">Ver mais</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </main>
+        </div>
     </body>
 </html>
