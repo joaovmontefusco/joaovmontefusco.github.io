@@ -1,0 +1,14 @@
+html,
+body,
+.my-wrapper {
+  height: 100%;
+}
+
+body {
+  background-color: #fae8de;
+  font-family: "Montserrat", sans-serif;
+}
+
+.link {
+  color: #26a69a;
+}
