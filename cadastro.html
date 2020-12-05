@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>PAYU</title>
+		<title>PAYU - Cadastro</title>
 		<link rel="icon" href="img/payu.png">
 		<meta charset="utf-8">
 		<!-- Compiled and minified CSS -->
@@ -17,76 +17,96 @@
 
 
 	<body>
-
-		<main>
-			<div class="center">
-				<img alt="Logo da Payu" class="logo" src="img/payu.png">
+		<div class="container">
+			<div class="row">
+				<form class="col s6 offset-s3">
+					<div class="row">
+						<div class="center col s12">
+							<img alt="Logo da Payu" class="logo" src="img/payu.png">
+						</div>
+					</div>
+					<div class="row">
+						<div class="input-field col s6">
+							<input id="nome" type="text" class="validate">
+							<label for="nome">Nome</label>
+						</div>
+						<div class="input-field col s6">
+							<input id="sobrenome" type="text" class="validate">
+							<label for="sobrenome">Sobrenome</label>
+						</div>
+					</div>
+					<div class="row">
+						<div class="input-field col s6">
+							<input id="email" type="email" class="validate">
+							<label for="email">Email</label>
+						</div>
+						<div class="input-field col s6">
+							<input id="senha" type="password" class="validate">
+							<label for="senha">Senha</label>
+						</div>
+					</div>
+					<div class="row">
+						<div class="input-field col s6">
+							<input id="cidade" type="text" class="validate">
+							<label for="cidade">Cidade</label>
+						</div>
+						<div class="input-field col s6">
+							<input id="estado" type="text" class="validate">
+							<label for="estado">Estado</label>
+						</div>
+					</div>
+					<div class="row">
+						<div class="input-field col s6">
+							<input id="data-nascimento" type="date">
+							<label for="data-nascimento">Data de Nascimento</label>
+						</div>
+						<div class="input-field col s6">
+							<input id="filhos" type="number" class="validate">
+							<label for="filhos">Quantos filhos você tem?</label>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col s3">
+							<label>
+								<input name="sexo" type="radio" required/>
+								<span>Feminino</span>
+							</label>
+						</div>
+						<div class="col s3">
+							<label>
+								<input name="sexo" type="radio" required/>
+								<span>Masculino</span>
+							</label>
+						</div>
+						<div class="col s3">
+							<label>
+								<input name="sexo" type="radio" required/>
+								<span>Outro</span>
+							</label>
+						</div>
+						<div class="col s3">
+							<label>
+								<input name="sexo" type="radio" required/>
+								<span>Não dizer</span>
+							</label>
+						</div>				
+					</div>
+					<div class="file-field input-field">
+						<div class="waves-effect waves-light btn-small">
+							<span>Selecionar</span>
+							<input id="foto-perfil" type="file">
+						</div>
+						<div class="file-path-wrapper">
+							<input class="file-path validate" type="text" placeholder="Adicione uma foto de perfil">
+						</div>
+					</div>
+					<div class="row">
+						<div class='col s12 center'>
+							<a href="categorias.html" class="center waves-effect waves-light btn">Cadastre-se</a>
+						</div>
+					</div>
+				</form>
 			</div>
-			<h1 class="titulo-cadastro">Cadastro</h1>
-			<form>
-				<div class="form-email">
-					<p>Email</p>
-					<input type="email">
-				</div>
-				<div class="form-senha">
-					<p>Senha</p>
-					<input type="password">
-				</div>
-				<div class="form-nome">
-					<p>Nome completo</p>
-					<input type="text">
-				</div>
-				<div class="form-nascimento">
-					<p>Data de nascimento</p>
-					<input type="date">
-				</div>
-				<div class="form-sexo">
-					<p>Sexo</p>
-					<p>
-						<label>
-						  <input name="group1" type="radio" checked />
-						  <span>Feminino</span>
-						</label>
-					  </p>
-					  <p>
-						<label>
-						  <input name="group1" type="radio" />
-						  <span>Masculino</span>
-						</label>
-					  </p>
-					  <p>
-						<label>
-						  <input class="with-gap" name="group1" type="radio"  />
-						  <span>Outro</span>
-						</label>
-					  </p>
-					  <p>
-						<label>
-						  <input class="with-gap" name="group1" type="radio"  />
-						  <span>Prefiro não dizer</span>
-						</label>
-					  </p>
-				</div>
-				<div class="form-cidade">
-					<p>Cidade</p>
-					<input type="text">
-				</div>
-				<div class="form-estado">
-					<p>Estado</p>
-					<input type="text">
-				</div>
-				<div class="form-filhos">
-					<p>Número de filhos</p>
-					<input type="number">
-				</div>
-				<div class="form-foto">
-					<p>Foto de perfil</p>
-					<input type="file" />
-				</div>
-				<div class="form-botao cadastro">
-					<a href="index.html" class="center waves-effect waves-light btn">Cadastre-se</a>
-				</div>
-			</form>
-		</main>
+		</div>
 	</body>
 </html>
