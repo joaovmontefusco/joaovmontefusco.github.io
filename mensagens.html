@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>PAYU - Home</title>
+		<link rel="icon" href="img/payu.png">
+        <meta charset="utf-8">
+        
+		<!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;1,200&display=swap" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	</head>
+
+	<body>
+        <nav>
+            <div class="nav-wrapper">
+                <a href="categorias.html" class="brand-logo nav-logo">PAYU</a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="categorias.html">Categorias</a></li>
+                    <li><a href="mensagens.html">Mensagens</a></li>
+                    <li><a href="perfil.html">Perfil</a></li>
+                    <li><a href="index.html">Sair</a></li>
+                </ul>
+            </div>
+        </nav>
+		<div class="container">
+            <div class="row">
+                <div class="col s12 center">
+                    <h1>Mensagens</h1>
+                </div>
+                <div class="col s4 offset-s2">
+                    <div class="card">
+                        <div class="card-content row">
+                            <div class="col s12 center chat-title">
+                                <span>Vania (23 mensagens)</span>
+                            </div>
+                            <div class="col s12 center chat-button">
+                                <a href="#modal-chat" class="center waves-effect waves-light btn-small modal-trigger"><i class="material-icons">remove_red_eye</i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s4">
+                    <div class="card">
+                        <div class="card-content row">
+                            <div class="col s12 center chat-title">
+                                <span>Vania (23 mensagens)</span>
+                            </div>
+                            <div class="col s12 center chat-button">
+                                <a href="#modal-chat" class="center waves-effect waves-light btn-small modal-trigger"><i class="material-icons">remove_red_eye</i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s4 offset-s2">
+                    <div class="card">
+                        <div class="card-content row">
+                            <div class="col s12 center chat-title">
+                                <span>Vania (23 mensagens)</span>
+                            </div>
+                            <div class="col s12 center chat-button">
+                                <a href="#modal-chat" class="center waves-effect waves-light btn-small modal-trigger"><i class="material-icons">remove_red_eye</i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s4">
+                    <div class="card">
+                        <div class="card-content row">
+                            <div class="col s12 center chat-title">
+                                <span>Vania (23 mensagens)</span>
+                            </div>
+                            <div class="col s12 center chat-button">
+                                <a href="#modal-chat" class="center waves-effect waves-light btn-small modal-trigger"><i class="material-icons">remove_red_eye</i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="modal-chat" class="modal modal-fixed-footer">
+            <div class="modal-content" id="chat-body">
+                <h4>Vania</h4>
+                <hr></hr>
+                <div class="card-panel received message">
+                    <h2 class="message-author">Vania</h2>
+                    <span class="white-text message-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam id aliquam sed omnis nulla dolores eveniet, rerum alias laborum quo iste totam aliquid atque nostrum molestias dignissimos quos iure! Fugit?</span>
+                </div>
+                <div class="card-panel sent message">
+                    <h2 class="message-author">Você</h2>
+                    <span class="white-text message-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis in esse sed quisquam asperiores porro error, minus quasi quibusdam reiciendis dignissimos expedita consequatur ad inventore ea repellendus eaque eos totam!</span>
+                </div>
+            </div>
+            <div class="modal-footer row">
+                <form class="col s12">
+                    <div class="row">
+                        <div class="input-field col s9">
+                            <input id="new-message" type="text" class="validate">
+                            <label for="new-message">Mensagem...</label>
+                        </div>
+                        <div class="input-field col s2">
+                            <a class="btn waves-effect waves-light" id="send-message"><i class="material-icons">send</i></a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                var elems = document.querySelectorAll('.modal');
+                var instances = M.Modal.init(elems);
+            });
+
+            const button = document.getElementById("send-message")
+            const chatBody = document.getElementById("chat-body")
+            const newMessageText = document.getElementById("new-message")
+            button.addEventListener("click", function () {
+                const newMessage = document.createElement('div');
+                newMessage.classList.add("card-panel", "received", "message")
+                newMessage.innerHTML = `<h2 class="message-author">Você</h2><span class="white-text message-text">${newMessageText.value}</span>`
+
+                chatBody.appendChild(newMessage)
+                newMessage.scrollIntoView({ behavior: 'smooth' })
+            })    
+        </script>
+    </body>
+</html>

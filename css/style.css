@@ -71,3 +71,36 @@ strong {
   margin-top: 20px;
   border-radius: 50%;
 }
+
+.chat-title {
+  margin: 0px;
+  font-size: medium;
+}
+
+.chat-button {
+  margin-top: 10px;
+}
+
+.received {
+  background-color: green;
+}
+
+.sent {
+  background-color: red;
+}
+
+.message {
+  border-radius: 50px;
+  padding-left: 35px;
+  padding-top: 10px;
+}
+
+.message-author {
+  font-weight: bolder;
+  font-size: medium;
+  margin-bottom: 5px;
+}
+
+.message-text {
+  font-size: small;
+}
