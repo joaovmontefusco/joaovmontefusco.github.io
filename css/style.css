@@ -82,11 +82,11 @@ strong {
 }
 
 .received {
-  background-color: green;
+  background-color: #26a69a;
 }
 
 .sent {
-  background-color: red;
+  background-color: #ee6e73;
 }
 
 .message {

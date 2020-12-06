@@ -130,6 +130,7 @@
                 newMessage.innerHTML = `<h2 class="message-author">Você</h2><span class="white-text message-text">${newMessageText.value}</span>`
 
                 chatBody.appendChild(newMessage)
+                newMessageText.value = ''
                 newMessage.scrollIntoView({ behavior: 'smooth' })
             })    
         </script>
