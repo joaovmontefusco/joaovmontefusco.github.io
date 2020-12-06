@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>PAYU - Home</title>
+		<link rel="icon" href="img/payu.png">
+        <meta charset="utf-8">
+        
+		<!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;1,200&display=swap" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	</head>
+
+	<body>
+        <nav>
+            <div class="nav-wrapper">
+                <a href="categorias.html" class="brand-logo nav-logo">PAYU</a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="categorias.html">Categorias</a></li>
+                    <li><a href="mensagens.html">Mensagens</a></li>
+                    <li><a href="perfil.html">Perfil</a></li>
+                    <li><a href="index.html">Sair</a></li>
+                </ul>
+            </div>
+        </nav>
+		<div class="container">
+			<div class="row">
+				<form class="col s6 offset-s3">
+					<div class="row">
+						<div class="center col s12">
+							<img alt="Logo da Payu" class="profile-image" src="img/fernanda.jpg">
+						</div>
+					</div>
+					<div class="row">
+						<div class="input-field col s6">
+							<input id="nome" type="text" class="validate" value="Fernanda">
+							<label for="nome">Fernanda</label>
+						</div>
+						<div class="input-field col s6">
+							<input id="sobrenome" type="text" class="validate" value="Silveira">
+							<label for="sobrenome">Sobrenome</label>
+						</div>
+					</div>
+					<div class="row">
+						<div class="input-field col s6">
+							<input id="email" type="email" class="validate" value="fernanda@email.com">
+							<label for="email">Email</label>
+						</div>
+						<div class="input-field col s6">
+							<input id="senha" type="password" class="validate" placeholder="Sem alterações">
+							<label for="senha">Senha</label>
+						</div>
+					</div>
+					<div class="row">
+						<div class="input-field col s6">
+							<input id="cidade" type="text" class="validate" value="Valinhos">
+							<label for="cidade">Cidade</label>
+						</div>
+						<div class="input-field col s6">
+							<input id="estado" type="text" class="validate" value="SP">
+							<label for="estado">Estado</label>
+						</div>
+					</div>
+					<div class="row">
+						<div class="input-field col s6">
+							<input id="data-nascimento" type="date" value="1978-04-20">
+							<label for="data-nascimento">Data de Nascimento</label>
+						</div>
+						<div class="input-field col s6">
+							<input id="filhos" type="number" class="validate" value="2">
+							<label for="filhos">Quantos filhos você tem?</label>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col s3">
+							<label>
+								<input name="sexo" type="radio" required checked/>
+								<span>Feminino</span>
+							</label>
+						</div>
+						<div class="col s3">
+							<label>
+								<input name="sexo" type="radio" required/>
+								<span>Masculino</span>
+							</label>
+						</div>
+						<div class="col s3">
+							<label>
+								<input name="sexo" type="radio" required/>
+								<span>Outro</span>
+							</label>
+						</div>
+						<div class="col s3">
+							<label>
+								<input name="sexo" type="radio" required/>
+								<span>Não dizer</span>
+							</label>
+						</div>				
+					</div>
+					<div class="file-field input-field">
+						<div class="waves-effect waves-light btn-small">
+							<span><i class="material-icons">edit</i></span>
+							<input id="foto-perfil" type="file">
+						</div>
+						<div class="file-path-wrapper">
+							<input class="file-path validate" type="text" placeholder="Altere sua foto de perfil">
+						</div>
+					</div>
+					<div class="row">
+						<div class='col s12 center'>
+							<a href="categorias.html" class="center waves-effect waves-light btn">Salvar Alterações</a>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+    </body>
+</html>
