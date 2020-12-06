@@ -21,7 +21,7 @@ h1 {
   margin-left: 20px;
 }
 
-.card-img-size {
+.timg-size {
   height: 230px;
   width: 400px;
 }
@@ -34,6 +34,10 @@ h1 {
   height: 28%;
 }
 
+.card-title
+{
+  background: #FFB6C1;
+}
 .post-image {
   width: 100%;
 }
