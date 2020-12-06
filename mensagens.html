@@ -101,7 +101,7 @@
                 </div>
             </div>
             <div class="modal-footer row">
-                <form class="col s12">
+                <div class="col s12">
                     <div class="row">
                         <div class="input-field col s9">
                             <input id="new-message" type="text" class="validate">
@@ -111,7 +111,7 @@
                             <a class="btn waves-effect waves-light" id="send-message"><i class="material-icons">send</i></a>
                         </div>
                     </div>
-                </form>
+                </div>
             </div>
         </div>
 
@@ -124,7 +124,8 @@
             const button = document.getElementById("send-message")
             const chatBody = document.getElementById("chat-body")
             const newMessageText = document.getElementById("new-message")
-            button.addEventListener("click", function () {
+
+            const sendMessage = () => {
                 const newMessage = document.createElement('div');
                 newMessage.classList.add("card-panel", "received", "message")
                 newMessage.innerHTML = `<h2 class="message-author">Você</h2><span class="white-text message-text">${newMessageText.value}</span>`
@@ -132,7 +133,17 @@
                 chatBody.appendChild(newMessage)
                 newMessageText.value = ''
                 newMessage.scrollIntoView({ behavior: 'smooth' })
-            })    
+            }
+
+
+            newMessageText.addEventListener('keyup', function(e){
+                var key = e.which || e.keyCode;
+                if (key == 13) {
+                    sendMessage()
+                }
+            })   
+
+            button.addEventListener("click", sendMessage)    
         </script>
     </body>
 </html>
