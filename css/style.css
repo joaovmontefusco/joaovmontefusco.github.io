@@ -37,3 +37,32 @@ h1 {
 .post-image {
   width: 100%;
 }
+
+.modal {
+  width: 34%;
+}
+
+.comment {
+  background-color: #fae8de;
+  border-radius: 20px;
+  padding: 10px;
+  margin-top: 15px;
+}
+
+.comments-title {
+  font-size: x-large;
+}
+
+.comment-author {
+  margin-bottom: -10px;
+  font-size: large;
+  font-weight: bolder;
+}
+
+.comment-body {
+  margin-bottom: -0px;
+}
+
+strong {
+  font-weight: bolder;
+}
