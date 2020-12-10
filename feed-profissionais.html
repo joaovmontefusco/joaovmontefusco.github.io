@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>PAYU - Home</title>
+		<link rel="icon" href="img/payu.png">
+        <meta charset="utf-8">
+        
+		<!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;1,200&display=swap" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	</head>
+
+	<body>
+        <nav>
+            <div class="nav-wrapper">
+                <a href="categorias.html" class="brand-logo nav-logo">PAYU</a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="categorias.html">Categorias</a></li>
+                    <li><a href="mensagens.html">Mensagens</a></li>
+                    <li><a href="perfil.html">Perfil</a></li>
+                    <li><a href="index.html">Sair</a></li>
+                </ul>
+            </div>
+        </nav> 
+        <div class="container">
+            <div class="row">
+                <div class="col s12 center">
+                    <h1>Profissionais de Saúde</h1>
+                </div>
+                <div class="col s9 right-align">
+                    <a href="#modal-post" class="center waves-effect waves-light btn modal-trigger">Novo post</a>
+                </div>
+                <div class="col s9">
+                    <div id="modal-post" class="modal modal-fixed-footer">
+                        <div class="modal-content">
+                            <h4>Novo Post</h4>
+                            <form class="col s12">
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <textarea id="descricao" class="materialize-textarea" data-length="1000"></textarea>
+                                        <label for="descricao">Escreva aqui o que você quer falar!</label>
+                                    </div>
+                                </div>
+                                <div class="file-field input-field">
+                                    <div class="waves-effect waves-light btn-small">
+                                        <span><i class="material-icons">add</i></span>
+                                        <input id="foto-perfil" type="file">
+                                    </div>
+                                    <div class="file-path-wrapper">
+                                        <input class="file-path validate" type="text" placeholder="Adicione uma imagem ao seu post">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Fechar</a>
+                            <a href="#!" class="modal-close waves-effect waves-green btn">Postar</a>
+                        </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- Post 1 -->
+                <div class="col s6 offset-s3">
+                    <div class="card">
+                        <div class="card-content">
+                            <span class="card-title">Fernanda Mila</span>
+                            <p>Após o parto, iniciou-se um período que se estende de 45 a 60 dias chamado puerpério (em mulheres que amamentam por um longo tempo, o puerpério pode durar um pouco mais).</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="#modal1" class="modal-trigger">Comentários (3)</a>
+                            <div id="modal1" class="modal modal-fixed-footer">
+                                <div class="modal-content">
+                                    <h4>Fernanda Mila</h4>
+                                    <p>Após o parto, iniciou-se um período que se estende de 45 a 60 dias chamado puerpério (em mulheres que amamentam por um longo tempo, o puerpério pode durar um pouco mais).</p>
+                                    <hr></hr>
+                                    <h4 class="comments-title">Comentários</h4>
+                                    <div class="comment">
+                                        <h4 class="comment-author">Paula</h4>
+                                        <p class="comment-body">Colocar comentário aqui</p>
+                                    </div>
+                                    <div class="comment">
+                                        <h4 class="comment-author">Fernanda</h4>
+                                        <p class="comment-body">Colocar comentário aqui</p>
+                                    </div>
+                                    <div class="comment">
+                                        <h4 class="comment-author">Patricia</h4>
+                                        <p class="comment-body">Colocar comentário aqui</p>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <a href="#!" class="modal-close waves-effect waves-green btn-flat">Fechar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s6 offset-s3">
+                    <div class="card">
+                        <div class="card-content">
+                            <span class="card-title">Angela Silva</span>
+                            <p>Semana que vem começa o meu período de purpério e tenho muita dúvidas sobre, alguém pode me ajudar??</p>
+                            <div class="row">
+                                <div class="col s12">
+                                    <img src="img/purperio.jpg" alt="" class="post-image">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-action">
+                            <a href="#modal2" class="modal-trigger">Comentários (1)</a>
+                            <div id="modal2" class="modal modal-fixed-footer">
+                                <div class="modal-content">
+                                    <h4>Angela Silva</h4>
+                                    <p>Semana que vem começa o meu período de purpério e tenho muita dúvidas sobre, alguém pode me ajudar??</p>
+                                    <div class="row">
+                                        <div class="col s12">
+                                            <img src="img/purperio.jpg" alt="" class="post-image">
+                                        </div>
+                                    </div>
+                                    <hr></hr>
+                                    <h4 class="comments-title">Comentários</h4>
+                                    <div class="comment">
+                                        <h4 class="comment-author">Magda</h4>
+                                        <p class="comment-body">Colocar comentário aqui</p>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <a href="#!" class="modal-close waves-effect waves-green btn-flat">Fechar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                var elems = document.querySelectorAll('.modal');
+                var instances = M.Modal.init(elems);
+            });         
+        </script>
+    </body>
+</html>
